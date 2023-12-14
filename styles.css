@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap");
+
+/*
+:root {
+    --primary-color: #d291bc;
+    --primary-color-dark: #f7ebf3;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --extra-light: #fafafa;
+    --white: #ffffff;
+}
+*/
+
+
+:root {
+    --primary-color: #100e17;
+    --primary-color-dark: #0c0b12;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --background-gradient-1: linear-gradient(to right, #1a5fee, #10bae1);
+    --background-gradient-2: linear-gradient(to right, #0d1732, #0f2835);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: white;
+}
+  
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: "Work Sans", sans-serif;
+}
+  
+  
+nav {
+    max-width: 90%;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 16vh;
+    /* background-color: aquamarine; */
+}
+  
+.nav_logo {
+    /* display: flex; */
+    /* align-items: center; */
+    /* gap: 5px; */
+}
+
+.nav_logo {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+}
+  
+.nav_links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+  
+.link a {
+    /* padding: 5px; */
+    color: var(--text-light);
+}
+  
+.link a:hover {
+    /* color: var(--primary-color); */
+}
+
+/* Navbar from other website */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+.logo {
+  font-size: 1.25rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+  position: relative;
+  z-index: 1000;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  /* background-color: #64748b; */
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  /* font-size: 1.5rem; */
+  color: var(--text-light);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:nth-child(2) {
+  opacity: 1;
+}
+
+.hamburger-icon span:last-child {
+  transform: none;
+}
+
+/* SHOWCASE */
+
+#showcase{
+    min-height: 100vh;
+    background: url(img/plane-in-the-middle-of-buildings.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* position: relative; */
+    opacity: 0.90;
+    text-align: center;
+    color: #000;
+}
+
+/* Another Section */
+
+.blabla {
+    height: 130vh;
+    background-color: #1e293b;
+    color: #f7ebf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.child {
+    width: 100%;
+    /* background-color: red; */
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-1 {
+    display: block;
+    text-align: center;
+}
+
+.grand-child {
+    margin: 0 100px;
+}
+
+.grand-child-1 {
+    border-right: 2px solid lightblue;
+    height: 20vh;
+    padding-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.holders {
+    background-color: var(--primary-color-dark);
+    color: white;
+  }
+  
+.holders__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: var(--background-gradient-2);
+}
+  
+.holders__card {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--primary-color-dark);
+}
+  
+.holders__card span {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 100%;
+}
+  
+.holders__card span img {
+    max-width: 50px;
+}
+  
+.holders__card h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+  
+.holders__content {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    background: var(--background-gradient-2);
+    border-radius: 10px;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  .section__header {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: var(--text-dark);
+  }
+  
+  .btn {
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: var(--primary-color-dark);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+    display: flex;
+  }
+  
+
+
+
+
+
+  .booking__container {
+    border-radius: 2rem;
+    border: 1px solid var(--extra-light);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 100px auto;
+  }
+  
+  .booking__nav {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: var(--extra-light);
+    border-radius: 5px;
+  }
+  
+  .booking__nav span {
+    flex: 1;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .booking__nav span:nth-child(2) {
+    color: var(--white);
+    background-color: var(--primary-color);
+  }
+  
+  .booking__container form {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+    gap: 1rem;
+  }
+  
+  .booking__container .input__content {
+    width: 100%;
+  }
+  
+  .booking__container .form__group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .booking__container .form__group span {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    background-color: var(--extra-light);
+    border-radius: 1rem;
+  }
+  
+  .booking__container .input__group {
+    width: 100%;
+    position: relative;
+  }
+  
+  .booking__container label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  
+  .booking__container input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--text-dark);
+  }
+  
+  .booking__container input:focus ~ label {
+    font-size: 0.8rem;
+    top: 0;
+  }
+  
+  .booking__container .form__group p {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+  }
+  
+  .booking__container .btn {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section__subheader {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}

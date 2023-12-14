@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    
+    <nav id="desktop-nav">
+        <div class="nav_logo">
+            EQUINOX AIRLINE
+        </div>
+        <ul class="nav_links">
+          <li class="link"><a href="#home">Home</a></li>
+          <li class="link"><a href="#offers">Offers</a></li>
+          <li class="link"><a href="#membership">Membership</a></li>
+          <li class="link"><a href="#about">About</a></li>
+          <li class="link"><a href="#blog">Blog</a></li>
+          <li class="link"><a href="#destinations">Destinations</a></li>
+          <li class="link"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">EQUINOX AIRLINE</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#offers" onclick="toggleMenu()">Offers</a></li>
+            <li><a href="#membership" onclick="toggleMenu()">Membership</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+            <li><a href="#destinations" onclick="toggleMenu()">Destinations</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+    </nav>
+
+    <section id="showcase">
+        <div class="container">
+            <!-- <h1>Affordable Flights</h1> -->
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p> -->
+        </div>
+    </section>
+
+    <section class="section__container booking__container">
+        <div class="booking__nav">
+          <span>Economy Class</span>
+          <span>Business Class</span>
+          <span>First Class</span>
+        </div>
+        <form>
+          <div class="form__group">
+            <span><i class="ri-map-pin-line"></i></span>
+            <div class="input__content">
+              <div class="input__group">
+                <input type="text" />
+                <label>Location</label>
+              </div>
+              <p>Where are you goung?</p>
+            </div>
+          </div>
+          <div class="form__group">
+            <span><i class="ri-user-3-line"></i></span>
+            <div class="input__content">
+              <div class="input__group">
+                <input type="number" />
+                <label>Travellers</label>
+              </div>
+              <p>Add guests</p>
+            </div>
+          </div>
+          <div class="form__group">
+            <span><i class="ri-calendar-line"></i></span>
+            <div class="input__content">
+              <div class="input__group">
+                <input type="text" />
+                <label>Departure</label>
+              </div>
+              <p>Add date</p>
+            </div>
+          </div>
+          <div class="form__group">
+            <span><i class="ri-calendar-line"></i></span>
+            <div class="input__content">
+              <div class="input__group">
+                <input type="text" />
+                <label>Return</label>
+              </div>
+              <p>Add date</p>
+            </div>
+          </div>
+          <button class="btn"><i class="ri-search-line"></i></button>
+        </form>
+    </section>
+    
+    <section class="lounge">
+
+    </section>
+
+
+
+<!--
+
+    <div class="blabla">
+        <div>
+            <div class="child child-1">
+                <h1>Yo THIS IS HUGE AIRLINE</h1>
+                <p>Yoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</p>
+            </div>
+            <div class="child child-2">
+                <div class="grand-child grand-child-1">HHHHHHHHUUUUUUU</div>
+                <div class="grand-child grand-child-2">LKJLKJLKJLKJLKJLKJLKJLKJ</div>
+                <div class="grand-child grand-child-2">Better Security</div>
+            </div>
+            <div class="child child-3"></div>
+        </div>
+    </div>
+
+-->
+
+
+    <section class="holders">
+        <div class="section__container holders__container">
+            <h2 class="section__header">Travel with confidence as you organize your plans</h2>
+            <p class="section__subheader">
+              Discover assistance for your bookings and travel arrangements, and 
+              understand what to anticipate throughout your journey.
+            </p>
+            <div class="holders__grid">
+                <div class="holders__card">
+                <h4>Travel Guidelines for Thailand</h4>
+                <p>
+                  Prepare for a seamless and enchanting Thai adventure with essential 
+                  information. Travel hassle-free and stay informed.
+                </p>
+                </div>
+                <div class="holders__card">
+                <h4>The Ultimate Sky Experience</h4>
+                <p>
+                  We offer a superior air travel experience, combining seamless luxury 
+                  and exceptional service for journeys above the clouds.
+                </p>
+                </div>
+                <div class="holders__card">
+                <h4>Comprehensive Travel Insurance</h4>
+                <p>
+                  Your All-in-One Solution for a worry-free journey, covering you from 
+                  unexpected cancellations to unforeseen emergencies.
+                </p>
+                </div>
+            </div>
+            <div class="holders__content">
+              We pride ourselves on being a reliable and safety-focused airline, 
+              committed to ensuring your travel experience is not only enjoyable but also secure. 
+              Your well-being is our top priority, and we adhere to stringent safety measures to 
+              guarantee a smooth and worry-free journey.
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Photo by <a href="https://unsplash.com/@shahzin_2903?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shahzin Shajid</a> on <a href="https://unsplash.com/photos/aSiTu8TEV_w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+  
+    <script src="script.js"></script>
+</body>
+</html>
