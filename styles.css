@@ -236,25 +236,10 @@ nav,
     padding-right: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .holders {
     background-color: var(--primary-color-dark);
     color: white;
-  }
+}
   
 .holders__grid {
     margin-top: 4rem;
