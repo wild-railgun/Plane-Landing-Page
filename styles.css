@@ -61,8 +61,11 @@ body {
     /* font-family: "Work Sans", sans-serif; */
     font-family: "Poppins", sans-serif;
 }
-  
-  
+
+.navigation_container {
+  background-color: var(--secondary-color);
+}
+
 nav {
     max-width: 90%;
     margin: auto;
@@ -71,6 +74,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 16vh;
+    color: white;
     /* background-color: aquamarine; */
 }
   
@@ -82,7 +86,7 @@ nav {
 
 .nav_logo {
     font-size: 1.25rem;
-    color: var(--text-dark);
+    /* color: var(--text-dark); */
 }
   
 .nav_links {
@@ -94,8 +98,9 @@ nav {
   
 .link a {
     /* padding: 5px; */
-    color: var(--text-light);
-}
+    /* color: var(--text-light); */
+    color: white;
+  }
   
 /* .link a:hover { */
     /* color: var(--primary-color); */
@@ -390,6 +395,14 @@ img {
   /* background-color: var(--primary-color); */
   /* background-color: var(--orange); */
 /* } */
+.booking_container {
+  border-radius: 2rem;
+  border: 1px solid var(--extra-light);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  /* margin-top: 50px; */
+  /* margin-bottom: 50px; */
+}
   
 .booking_container form {
   margin-top: 4rem;
@@ -705,13 +718,49 @@ img {
   text-align: center;
 }
 
+/* Media Queries */
+
+/* 1200 Pixels */
 @media (max-width: 1200px) {
   .nav_btns {
     display: none;
   }
 }
 
+/* 900 Pixels */
 @media (max-width: 900px) {
+  .holders_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  /* .booking_container form .btn { */
+    /* background: red; */
+  /* } */
+
+  .booking_container form {
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 50% 50% 50% 50% 100%; */
+  }
+
+  .booking_container .btn {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  /* .button_container { */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* border: 1px solid black; */
+    /* background-color: red; */
+    /* align-items: center; */
+  /* } */
+
+  /* .button_container .btn { */
+    /* width: 50%; */
+  /* } */
+
   .question_box.active .content {
     height: 175px;
   }
@@ -725,12 +774,32 @@ img {
   }
 }
 
+/* 600 Pixels */
 @media (max-width: 600px) {
   .footer_container {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .booking_container form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .booking_container .btn {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
   .question_box.active .content {
     height: 250px;
+  }
+
+  .subscribe_container form {
+    flex-direction: column;
+  }
+
+  .subscribe_container .btn {
+    width: 100%;
   }
 }
