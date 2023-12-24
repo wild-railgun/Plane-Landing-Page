@@ -55,6 +55,7 @@ a:hover {
 html,
 body {
     scroll-behavior: smooth;
+    background: black;
 }
   
 body {
@@ -365,8 +366,10 @@ img {
   margin: auto;
   display: flex;
   align-items: center;
-  background-color: var(--extra-light);
-  background-color: #dadada;
+  /* background-color: var(--extra-light); */
+  /* background-color: #dadada; */
+  /* background-color: black; */
+  background-color: rgb(22, 22, 22);
   border-radius: 5px;
 }
   
@@ -397,9 +400,12 @@ img {
 /* } */
 .booking_container {
   border-radius: 2rem;
-  border: 1px solid var(--extra-light);
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid var(--extra-light); */
+  /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1); */
+  box-shadow: 5px 5px 30px rgba(85, 85, 85, 0.2);
   margin: 50px auto;
+  background: black;
+  color: white;
   /* margin-top: 50px; */
   /* margin-bottom: 50px; */
 }
@@ -415,7 +421,7 @@ img {
   width: 100%;
 }
   
-  .booking_container .form_group {
+.booking_container .form_group {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -425,7 +431,8 @@ img {
   padding: 10px;
   font-size: 1.5rem;
   color: var(--text-dark);
-  background-color: var(--extra-light);
+  /* background-color: var(--extra-light); */
+  background-color: #0d0d0d;
   border-radius: 1rem;
 }
   
@@ -452,8 +459,10 @@ img {
   font-size: 1rem;
   outline: none;
   border: none;
-  border-bottom: 1px solid var(--primary-color);
-  color: var(--text-dark);
+  background: black;
+  border-bottom: 1px solid #1f1c2c;;
+  /* color: var(--text-dark); */
+  color: rgb(184, 182, 182);
 }
   
 .booking_container input:focus ~ label {
