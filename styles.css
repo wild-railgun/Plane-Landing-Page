@@ -19,7 +19,10 @@
     --primary-color-dark: #0c0b12;
     --white: #ffffff;
     
-    --secondary-color: #141414;
+    /* --secondary-color: #141414; */
+    --dark: #141414;
+    --dark-2: #141414;
+    --dark-3: #1a1919;
     /* --secondary-color: #131516; */
     --secondary-color-2: #0d0d0d;
     --text-dark: #333333;
@@ -41,15 +44,16 @@
 
 a {
     text-decoration: none;
-    text-decoration-color: white;
+    /* text-decoration-color: white; */
 }
   
-a:hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 0.7rem;
-    text-decoration-color: rgb(181, 181, 181);
-}
+/* a:hover { */
+    /* text-decoration: underline; */
+    /* text-underline-offset: 0.7rem; */
+    /* text-decoration-color: rgb(181, 181, 181); */
+    /* text-decoration-color: rgb(134, 134, 134); */
+    /* color: black; */
+/* } */
 
 html,
 body {
@@ -62,7 +66,7 @@ body {
 }
 
 .navigation_container {
-  background-color: var(--secondary-color);
+  background-color: var(--dark);
 }
 
 nav {
@@ -99,7 +103,15 @@ nav {
     /* padding: 5px; */
     /* color: var(--text-light); */
     color: white;
-  }
+    transition: 0.3s;
+}
+
+.link a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.7rem;
+  text-decoration-color: rgb(134, 134, 134);
+  color: rgb(134, 134, 134);
+}
   
 /* .link a:hover { */
     /* color: var(--primary-color); */
@@ -515,7 +527,7 @@ img {
 
 .faq {
   /* background-color: var(--primary-color-dark); */
-  background-color: var(--secondary-color);
+  background-color: var(--dark);
   color: white;
 }
 
@@ -542,14 +554,18 @@ img {
 
 .question_box {
   /* background-color: var(--primary-color-dark); */
-  background-color: var(--secondary-color);
+  background-color: var(--dark-3);
 }
 
 .question_box .title {
   padding: 2rem;
-  display: flex;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  display: grid;
   align-items: center;
   justify-content: space-between;
+  grid-template-columns: 1fr 22fr 1fr;
   gap: 1rem;
 }
 
@@ -670,7 +686,7 @@ img {
 */
 
 .footer {
-  background-color: var(--secondary-color);
+  background-color: var(--dark);
 }
 
 .footer_container {
@@ -703,7 +719,11 @@ img {
 }
 
 .footer_col a:hover {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  text-decoration: underline;
+  text-underline-offset: 0.7rem;
+  text-decoration-color: rgb(134, 134, 134);
+  color: rgb(134, 134, 134);
 }
 
 .footer_socials {
